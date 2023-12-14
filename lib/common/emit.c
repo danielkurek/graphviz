@@ -3982,13 +3982,13 @@ int gvRenderJobs (GVC_t * gvc, graph_t * g)
 	    return -1;
 	}
 
-        job->output_lang = gvrender_select(job, job->output_langname);
-        if (job->output_lang == NO_SUPPORT) {
-            agerr (AGERR, "renderer for %s is unavailable\n", job->output_langname);
-	    gv_fixLocale (0);
-	    FINISH();
-            return -1;
-        }
+        // job->output_lang = gvrender_select(job, job->output_langname);
+        // if (job->output_lang == NO_SUPPORT) {
+        //     agerr (AGERR, "renderer for %s is unavailable\n", job->output_langname);
+	    // gv_fixLocale (0);
+	    // FINISH();
+        //     return -1;
+        // }
 
         switch (job->output_lang) {
         case VTX:
